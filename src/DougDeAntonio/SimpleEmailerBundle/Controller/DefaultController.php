@@ -10,4 +10,8 @@ class DefaultController extends Controller
     {
         return $this->render('DougDeAntonioSimpleEmailerBundle:Default:index.html.twig', array('name' => $name));
     }
+	public function enlightenAction()
+	{
+		return $this->render('DougDeAntonioSimpleEmailerBundle:Default:index.html.twig');
+	}
 }

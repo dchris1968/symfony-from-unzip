@@ -135,17 +135,19 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        if (0 === strpos($pathinfo, '/hello')) {
-            // doug_de_antonio_simple_emailer_homepage
-            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'doug_de_antonio_simple_emailer_homepage')), array (  '_controller' => 'DougDeAntonio\\SimpleEmailerBundle\\Controller\\DefaultController::indexAction',));
-            }
+        // doug_de_antonio_simple_emailer_homepage
+        if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'doug_de_antonio_simple_emailer_homepage')), array (  '_controller' => 'DougDeAntonio\\SimpleEmailerBundle\\Controller\\DefaultController::indexAction',));
+        }
 
-            // south_hills_our_database_homepage
-            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'south_hills_our_database_homepage')), array (  '_controller' => 'SouthHills\\OurDatabaseBundle\\Controller\\DefaultController::indexAction',));
-            }
+        // doug_de_antonio_template_design
+        if ($pathinfo === '/enlighten') {
+            return array (  '_controller' => 'DougDeAntonio\\SimpleEmailerBundle\\Controller\\DefaultController::enlightenAction',  '_route' => 'doug_de_antonio_template_design',);
+        }
 
+        // south_hills_our_database_homepage
+        if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'south_hills_our_database_homepage')), array (  '_controller' => 'SouthHills\\OurDatabaseBundle\\Controller\\DefaultController::indexAction',));
         }
 
         // south_hills_retrieve_car_by_id

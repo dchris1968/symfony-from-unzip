@@ -17,22 +17,15 @@ class __TwigTemplate_5db97e3bbea2dd7be375f16470b730c2207834bdbaf120c588c2b49061b
     {
         // line 1
         echo "<!DOCTYPE html>
-
-<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">
-
+<html>
 <head>
-
-<meta name=\"Description\" content=\"Information architecture, Web Design, Web Standards.\" />
-<meta name=\"Keywords\" content=\"your, keywords\" />
-<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\" />
-<meta name=\"Distribution\" content=\"Global\" />
-<meta name=\"Author\" content=\"Erwin Aligam - ealigam@gmail.com\" />
-<meta name=\"Robots\" content=\"index,follow\" />
-
-<link rel=\"stylesheet\" href=\"css/Enlighten.css\" type=\"text/css\" />
-
-<title>Enlighten</title>
-\t
+\t<link rel=\"stylesheet\" href=\"";
+        // line 4
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("css/Enlighten.css"), "html", null, true);
+        echo "\" type=\"text/css\" />
+\t\t<title>
+\t\t\tEnlighten
+\t\t</title>\t
 </head>
 
 <body>
@@ -53,11 +46,11 @@ class __TwigTemplate_5db97e3bbea2dd7be375f16470b730c2207834bdbaf120c588c2b49061b
 \t
 \t<div id=\"menu\">
 \t\t<ul>
-\t\t\t<li><a href=\"index.html\" id=\"current\">Home</a></li>
-\t\t\t<li><a href=\"index.html\">News</a></li>
-\t\t\t<li><a href=\"index.html\">Downloads</a></li>
-\t\t\t<li><a href=\"index.html\">Support</a></li>
-\t\t\t<li><a href=\"index.html\">About</a></li>\t\t\t
+\t\t\t<li><a href=\"enlighten\" id=\"current\">Home</a></li>
+\t\t\t<li><a href=\"enlighten\">News</a></li>
+\t\t\t<li><a href=\"enlighten\">Downloads</a></li>
+\t\t\t<li><a href=\"enlighten\">Support</a></li>
+\t\t\t<li><a href=\"enlighten\">About</a></li>\t\t\t
 \t\t</ul>\t
 \t</div>
 \t\t\t\t
@@ -81,7 +74,7 @@ class __TwigTemplate_5db97e3bbea2dd7be375f16470b730c2207834bdbaf120c588c2b49061b
 \t\t\t
 \t\t\t\t<h1 class=\"clear\">Sidebar Menu</h1>
 \t\t\t\t<ul class=\"sidemenu\">
-\t\t\t\t\t<li><a href=\"index.html\" class=\"top\">Home</a></li>
+\t\t\t\t\t<li><a href=\"enlighten\" class=\"top\">Home</a></li>
 \t\t\t\t\t<li><a href=\"#TemplateInfo\">Template Info</a></li>
 \t\t\t\t\t<li><a href=\"#SampleTags\">Sample Tags</a></li>
 \t\t\t\t\t<li><a href=\"http://www.styleshout.com/\">More Templates</a></li>
@@ -146,7 +139,7 @@ class __TwigTemplate_5db97e3bbea2dd7be375f16470b730c2207834bdbaf120c588c2b49061b
 \t\t\t\t<a name=\"TemplateInfo\"></a>
 \t\t\t\t<h1>Template Info</h1>
 \t\t\t\t
-\t\t\t\t<p>Posted by <a href=\"index.html\">ealigam</a></p>
+\t\t\t\t<p>Posted by <a href=\"enlighten\">ealigam</a></p>
 
                 <p><strong>Enlighten</strong> is a free, W3C-compliant, CSS-based website template
                 by <a href=\"http://www.styleshout.com/\">styleshout.com</a>. This work is
@@ -163,8 +156,8 @@ class __TwigTemplate_5db97e3bbea2dd7be375f16470b730c2207834bdbaf120c588c2b49061b
                 </p>
 \t\t\t\t
 \t\t\t\t<p class=\"post-footer align-right\">\t\t\t\t\t
-\t\t\t\t\t<a href=\"index.html\" class=\"readmore\">Read more</a>
-\t\t\t\t\t<a href=\"index.html\" class=\"comments\">Comments (7)</a>
+\t\t\t\t\t<a href=\"enlighten\" class=\"readmore\">Read more</a>
+\t\t\t\t\t<a href=\"enlighten\" class=\"comments\">Comments (7)</a>
 \t\t\t\t\t<span class=\"date\">Jan 09, 2007</span>\t
 \t\t\t\t</p>
 \t\t\t\t
@@ -199,7 +192,10 @@ class __TwigTemplate_5db97e3bbea2dd7be375f16470b730c2207834bdbaf120c588c2b49061b
 \t\t\t
 \t\t\t\t<h3>Image and text</h3>
 \t\t\t\t<p>
-\t\t\t\t<a href=\"http://getfirefox.com/\"><img src=\"images/firefox-gray.jpg\" width=\"100\" height=\"121\" alt=\"firefox-gray\"  class=\"float-left\" /></a>
+\t\t\t\t<a href=\"http://getfirefox.com/\"><img src=\"";
+        // line 174
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/firefox-gray.jpg"), "html", null, true);
+        echo "\" width=\"100\" height=\"121\" alt=\"firefox-gray\"  class=\"float-left\" /></a>
 \t\t\t\tLorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. 
 \t\t\t\tCras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu 
 \t\t\t\tposuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum 
@@ -219,23 +215,23 @@ class __TwigTemplate_5db97e3bbea2dd7be375f16470b730c2207834bdbaf120c588c2b49061b
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr class=\"row-a\">
 \t\t\t\t\t\t<td class=\"first\">06.18.2007</td>
-\t\t\t\t\t\t<td><a href=\"index.html\">Augue non nibh</a></td>
-\t\t\t\t\t\t<td><a href=\"index.html\">Lobortis commodo metus vestibulum</a></td>
+\t\t\t\t\t\t<td><a href=\"enlighten\">Augue non nibh</a></td>
+\t\t\t\t\t\t<td><a href=\"enlighten\">Lobortis commodo metus vestibulum</a></td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr class=\"row-b\">
 \t\t\t\t\t\t<td class=\"first\">06.18.2007</td>
-\t\t\t\t\t\t<td><a href=\"index.html\">Fusce ut diam bibendum</a></td>
-\t\t\t\t\t\t<td><a href=\"index.html\">Purus in eget odio in sapien</a></td>
+\t\t\t\t\t\t<td><a href=\"enlighten\">Fusce ut diam bibendum</a></td>
+\t\t\t\t\t\t<td><a href=\"enlighten\">Purus in eget odio in sapien</a></td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr class=\"row-a\">
 \t\t\t\t\t\t<td class=\"first\">06.18.2007</td>
-\t\t\t\t\t\t<td><a href=\"index.html\">Maecenas et ipsum</a></td>
+\t\t\t\t\t\t<td><a href=\"enlighten\">Maecenas et ipsum</a></td>
 \t\t\t\t\t\t<td><a href=\"index.html\">Adipiscing blandit quisque eros</a></td>
 \t\t\t\t\t</tr>
 \t\t\t\t\t<tr class=\"row-b\">
 \t\t\t\t\t\t<td class=\"first\">06.18.2007</td>
-\t\t\t\t\t\t<td><a href=\"index.html\">Sed vestibulum blandit</a></td>
-\t\t\t\t\t\t<td><a href=\"index.html\">Cras lobortis commodo metus lorem</a></td>
+\t\t\t\t\t\t<td><a href=\"enlighten\">Sed vestibulum blandit</a></td>
+\t\t\t\t\t\t<td><a href=\"enlighten\">Cras lobortis commodo metus lorem</a></td>
 \t\t\t\t\t</tr>
 \t\t\t\t</table>
 \t\t\t
@@ -263,7 +259,7 @@ class __TwigTemplate_5db97e3bbea2dd7be375f16470b730c2207834bdbaf120c588c2b49061b
 
 \t<div id=\"footer\">
 \t    <p>
-\t    &copy; 2010 Your Company |
+\t    &copy; 2010 AC/DC Software Designs |
         <a href=\"http://www.bluewebtemplates.com/\" title=\"Website Templates\">website templates</a> by <a href=\"http://www.styleshout.com/\">styleshout</a> |
 \t    Valid <a href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a> |
 \t\t      <a href=\"http://validator.w3.org/check/referer\">XHTML</a>
@@ -283,8 +279,13 @@ class __TwigTemplate_5db97e3bbea2dd7be375f16470b730c2207834bdbaf120c588c2b49061b
         return "::base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  197 => 174,  24 => 4,  19 => 1,);
     }
 }
